@@ -3,6 +3,7 @@ import ShinyButton from '@/components/ui/shiny-button';
 import { cn } from '@/lib/utils';
 import { ArrowUpRight, Link } from 'lucide-react';
 import React from 'react'
+import ButtonGooey from '../../ButtonGooey';
 
 const AboutSection = () => {
   return (
@@ -22,13 +23,7 @@ const AboutSection = () => {
           awards.
         </p>
         <div className="mt-5 flex items-center gap-2">
-          <ShinyButton
-            className={cn(
-              "text-xs rounded-full tracking-wider bg-lime-300 hover:bg-lime-400 text-primary font-normal dark:text-primary-foreground transition-all duration-300 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-lime-400 before:blur-lg before:opacity-0 before:hover:opacity-100 before:transition-opacity before:duration-300"
-            )}
-          >
-            Lets Talk With Us
-          </ShinyButton>
+          <ButtonGooey className="w-40 mr-2">About Us</ButtonGooey>
           <button className="relative group">
             <div className={cn("flex items-center gap-2 group relative pr-6 pl-1 before:content-[''] before:w-full before:h-[1px] before:bg-primary before:absolute before:bottom-0 before:left-0 before:scale-x-0 before:transition-transform before:ease-in-out before:origin-right before:duration-300 before:hover:scale-x-100 before:hover:origin-left")}>
               <p>Meet the team</p>

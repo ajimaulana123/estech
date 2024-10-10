@@ -4,6 +4,7 @@ import NavbarBrand from "./NavbarBrand";
 import NavbarMenu from "./NavbarMenu";
 import ShinyButton from "@/components/ui/shiny-button";
 import { cn } from "@/lib/utils";
+import ButtonGooey from "../ButtonGooey";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,14 +35,7 @@ const Navbar = () => {
       >
         <NavbarBrand />
         <NavbarMenu />
-        <ShinyButton
-          className={cn(
-            "text-xs rounded-md tracking-wider bg-lime-300 hover:bg-lime-400 text-primary font-normal dark:text-primary-foreground transition-all duration-300 ease-in-out before:content-[''] before:absolute before:inset-0 before:bg-lime-400 before:blur-lg before:opacity-0 before:hover:opacity-100 before:transition-opacity before:duration-300",
-            scrolled ? "rounded-full px-5" : "hover:rounded-[24px]"
-          )}
-        >
-          Lets Talk With Us
-        </ShinyButton>
+        <ButtonGooey className="w-48">Lets Talk With Us</ButtonGooey>
       </div>
     </nav>
   );
