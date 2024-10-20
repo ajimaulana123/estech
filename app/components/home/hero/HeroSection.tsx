@@ -4,7 +4,7 @@ import ButtonFounder from "./ButtonFounder";
 const HeroSection = () => {
   return (
     <section className="container w-full aspect-video relative p-5">
-      <div className="container w-full aspect-video grid grid-cols-1 md:grid-cols-2 items-end mt-24 rounded-3xl relative">
+      <div className="container w-full aspect-video grid grid-cols-1 md:grid-cols-2 items-end rounded-3xl relative">
         <div className="relative hidden md:block w-full h-[70%] rounded-l-3xl">
           <div className="absolute z-10 -top-[calc(40%+1rem)] left-0 w-fit h-fit rounded-br-3xl bg-transparent text-primary">
             <h1 className="text-6xl lg:text-8xl flex flex-col">
