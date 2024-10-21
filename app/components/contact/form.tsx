@@ -3,7 +3,7 @@ import ButtonGooey from '../ButtonGooey';
 
 const FormSection = () => {
   return (
-    <section className="container grid grid-cols-12 gap-10">
+    <section className="container grid grid-cols-12 gap-10 px-5">
       <div className="col-span-4 space-y-5">
         <p className="text-lg">
           For general enquiries, please fill out the form to get in touch.

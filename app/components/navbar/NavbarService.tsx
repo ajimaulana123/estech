@@ -15,7 +15,7 @@ const NavbarService: React.FC = () => {
       <NavigationMenuTrigger className="text-sm p-0 data-[active]:bg-transparent data-[state=open]:bg-transparent mr-4">
         <div className="relative group">
           <span className="before:content-[''] before:w-[150%] before:h-full before:bg-lime-500 before:absolute before:left-1/2 before:-translate-x-1/2 before:top-0 before:-z-10 before:blur-md before:opacity-0 before:hover:opacity-100 before:transition-opacity before:duration-300">
-            Services
+            Layanan
           </span>
         </div>
       </NavigationMenuTrigger>
@@ -28,23 +28,22 @@ const NavbarService: React.FC = () => {
                 href="/"
               >
                 <div className="mb-2 mt-4 text-lg font-medium">
-                  Our Services
+                  Layanan Kami
                 </div>
                 <p className="text-sm leading-tight text-muted-foreground">
-                  Explore our range of professional services tailored to meet
-                  your needs.
+                  Jelajahi berbagai layanan profesional kami yang disesuaikan untuk memenuhi kebutuhan Anda.
                 </p>
               </Link>
             </NavigationMenuLink>
           </li>
-          <ListItem href="/services/web-development" title="Web Development">
-            Custom websites and web applications
+          <ListItem href="/services/web-development" title="Pengembangan Web">
+            Situs web dan aplikasi web kustom
           </ListItem>
-          <ListItem href="/services/mobile-apps" title="Mobile Apps">
-            iOS and Android app development
+          <ListItem href="/services/migration-to-js-ts" title="Migrasi ke JS/TS">
+            Transisi mulus dari bahasa lain ke JavaScript atau TypeScript
           </ListItem>
-          <ListItem href="/services/consulting" title="Consulting">
-            Expert advice on digital strategies
+          <ListItem href="/services/maintenance-js-ts" title="Pemeliharaan JS/TS">
+            Dukungan berkelanjutan dan pemeliharaan sistem untuk proyek JavaScript dan TypeScript
           </ListItem>
         </ul>
       </NavigationMenuContent>

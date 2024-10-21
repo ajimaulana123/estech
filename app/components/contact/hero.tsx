@@ -3,7 +3,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className="container relative">
+    <section className="container relative px-5">
       <h1 className="text-8xl flex flex-col">
         <span className="inline-block ml-[20%] py-5 whitespace-nowrap overflow-hidden text-ellipsis">
           It's nice to meet you.

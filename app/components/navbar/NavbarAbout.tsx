@@ -17,7 +17,7 @@ const NavbarAbout: React.FC = () => {
       <NavigationMenuTrigger className="text-sm p-0 data-[active]:bg-transparent data-[state=open]:bg-transparent mr-4">
         <div className="relative group">
           <span className="before:content-[''] before:w-[150%] before:h-full before:bg-lime-500 before:absolute before:left-1/2 before:-translate-x-1/2 before:top-0 before:-z-10 before:blur-md before:opacity-0 before:hover:opacity-100 before:transition-opacity before:duration-300">
-            About
+            Tentang
           </span>
         </div>
       </NavigationMenuTrigger>
@@ -29,21 +29,21 @@ const NavbarAbout: React.FC = () => {
                 className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                 href="/about"
               >
-                <div className="mb-2 mt-4 text-lg font-medium">About Us</div>
+                <div className="mb-2 mt-4 text-lg font-medium">Tentang Kami</div>
                 <p className="text-sm leading-tight text-muted-foreground">
-                  Learn more about our company, mission, and values.
+                  Pelajari lebih lanjut tentang perusahaan, misi, dan nilai-nilai kami.
                 </p>
               </Link>
             </NavigationMenuLink>
           </li>
-          <ListItem href="/about/team" title="Our Team">
-            Meet the people behind our success
+          <ListItem href="/tentang-kami" title="Tentang Kami">
+            Pelajari lebih lanjut tentang jasa yang kami tawarkan
           </ListItem>
-          <ListItem href="/about/history" title="Our History">
-            Journey through our company's milestones
+          <ListItem href="/tim-kami" title="Tim Kami">
+            Kami sedang membangun tim yang luar biasa
           </ListItem>
-          <ListItem href="/about/mission" title="Mission & Vision">
-            Discover what drives us forward
+          <ListItem href="/testimoni" title="Testimoni">
+            Apa kata klien tentang layanan kami
           </ListItem>
         </ul>
       </NavigationMenuContent>
