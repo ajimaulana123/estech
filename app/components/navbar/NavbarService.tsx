@@ -39,10 +39,10 @@ const NavbarService: React.FC = () => {
           <ListItem href="/services/web-development" title="Pengembangan Web">
             Situs web dan aplikasi web kustom
           </ListItem>
-          <ListItem href="/services/migration-to-js-ts" title="Migrasi ke JS/TS">
+          <ListItem href="/services/migration" title="Migrasi ke JS/TS">
             Transisi mulus dari bahasa lain ke JavaScript atau TypeScript
           </ListItem>
-          <ListItem href="/services/maintenance-js-ts" title="Pemeliharaan JS/TS">
+          <ListItem href="/services/maintenance" title="Pemeliharaan JS/TS">
             Dukungan berkelanjutan dan pemeliharaan sistem untuk proyek JavaScript dan TypeScript
           </ListItem>
         </ul>
