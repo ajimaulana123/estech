@@ -27,7 +27,7 @@ const MaintenancePage = () => {
                 alt="Maintenance"
                 className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                 height="550"
-                src="/images/maintenance.jpg"
+                src="/maintenance.jpg"
                 width="550"
               />
             </div>

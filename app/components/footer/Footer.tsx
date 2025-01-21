@@ -6,7 +6,7 @@ import LinkItem from "./LinkItem";
 const Footer = () => {
   return (
     <footer className="px-5">
-      <div className="bg-primary w-full h-screen container my-10 rounded-3xl relative">
+      <div className="bg-primary w-full container my-10 rounded-3xl relative overflow-hidden py-20">
         <div className="w-fit h-fit p-2 pl-10 bg-background absolute top-0 right-0 rounded-bl-3xl">
           <div className="h-full aspect-square bg-primary z-10 absolute top-0 -left-[calc(10%+1.45rem)] rounded-tr-3xl"></div>
           <div className="h-full aspect-square bg-primary z-10 absolute right-0 -bottom-[calc(60%+1.45rem)] rounded-tr-3xl"></div>
@@ -41,16 +41,16 @@ const Footer = () => {
         </div>
 
         {/* main content footer */}
-        <div className="flex items-center justify-center py-32 px-20 ml-10 gap-5">
-          <div className="w-fit mr-40">
-            <h2 className="text-4xl text-background leading-tighter mb-5 text-nowrap">
-              Do you like <br /> what you see?
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center py-20 lg:py-32 px-5 lg:px-20 lg:ml-10 gap-10 lg:gap-5">
+          <div className="w-full lg:w-fit lg:mr-40 flex flex-col items-center lg:items-start">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl text-background leading-tight mb-8 text-balance max-w-[300px] md:max-w-none text-center lg:text-left">
+              Do you like what you see?
             </h2>
-            <ButtonGooey>Start a Project</ButtonGooey>
+            <ButtonGooey className="w-[260px] sm:w-[200px]">Start a Project</ButtonGooey>
           </div>
-          <div className="w-full grid grid-cols-3 gap-5">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-5">
             <div className="">
-              <div className="text-gray-200 font-light mb-3 text-sm md:text-base dark:text-gray-100">
+              <div className="text-gray-200 font-light mb-5 lg:mb-3 text-sm md:text-base">
                 Learn
               </div>
               <LinkItem>About</LinkItem>
@@ -60,7 +60,7 @@ const Footer = () => {
               <LinkItem>FAQs</LinkItem>
             </div>
             <div className="">
-              <div className="text-gray-200 font-light mb-3 text-sm md:text-base dark:text-gray-100">
+              <div className="text-gray-200 font-light mb-5 lg:mb-3 text-sm md:text-base">
                 Explore
               </div>
               <LinkItem>Home</LinkItem>
@@ -70,8 +70,8 @@ const Footer = () => {
               <LinkItem>Sectors</LinkItem>
               <LinkItem>Contracts</LinkItem>
             </div>
-            <div className="">
-              <div className="text-gray-200 font-light mb-3 text-sm md:text-base dark:text-gray-100">
+            <div className="col-span-1 sm:col-span-2 lg:col-span-1">
+              <div className="text-gray-200 font-light mb-5 lg:mb-3 text-sm md:text-base">
                 Get in Touch
               </div>
               <LinkItem icon={<Phone className="w-4 h-4" />}>
@@ -87,8 +87,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full justify-center">
-          <div className="text-background leading-none tracking-tight text-9xl text-center">
+        <div className="w-full justify-center pb-10 px-5">
+          <div className="text-background leading-none tracking-tight text-4xl md:text-6xl lg:text-9xl text-center">
             Crafting since 2024
           </div>
         </div>

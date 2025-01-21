@@ -27,7 +27,7 @@ const MigrationPage = () => {
                 alt="Migration"
                 className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                 height="550"
-                src="/images/migration.jpg"
+                src="/migration.jpg"
                 width="550"
               />
             </div>

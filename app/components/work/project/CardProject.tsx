@@ -1,13 +1,27 @@
 import React from "react";
+import Image from "next/image";
 
-const CardProject = () => {
-  const tag = ["Web Design", "Web Development", "Branding"];
+interface CardProjectProps {
+  imageSrc: string;
+  year?: string;
+  client?: string;
+  title?: string;
+  tags?: string[];
+}
+
+const CardProject = ({ 
+  imageSrc = "/our-projects/sistem-pendapatan-dokter.png",
+  year = "2024",
+  client = "Individual Customer",
+  title = "Sistem pencatatan slip gaji dokter",
+  tags = ["Next Js", "Postgre", "Shadcn Ui"]
+}: CardProjectProps) => {
   return (
     <div>
       <div className="aspect-video rounded-3xl relative group overflow-hidden">
         <div className="bg-background z-10 w-fit p-3 -top-32 group-hover:top-0 -right-0 rounded-bl-3xl rounded-tr-3xl absolute duration-300">
           <div className="flex flex-wrap gap-2">
-            {tag.map((tag, index) => (
+            {tags.map((tag, index) => (
               <div
                 key={index}
                 className="inline-flex items-center px-3 py-2 rounded-full text-xs font-medium bg-primary text-background"
@@ -39,20 +53,22 @@ const CardProject = () => {
             <path d="M51.9 0v1.9c-27.6 0-50 22.4-50 50H0V0h51.9z"></path>
           </svg>
         </div>
-        <img
-          src="https://images.unsplash.com/photo-1721332149371-fa99da451baa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          className="w-full h-full scale-110 object-cover group-hover:-translate-y-2 transition-transform duration-300"
+        <Image
+          src={imageSrc}
+          alt={title || "Project Image"}
+          width={800}
+          height={450}
+          className="w-full h-full   object-containt group-hover:-translate-y-2 transition-transform duration-300"
         />
       </div>
       <div className="py-5">
         <div className="flex items-center space-x-3 mb-2 text-sm lg:text-base">
-          <div className="font-light">2024</div>
+          <div className="font-light">{year}</div>
           <div className="w-1.5 h-1.5 relative -top-px bg-gray-600 rounded-full"></div>
-          <div className="font-light">Sketch Studios</div>
+          <div className="font-light">{client}</div>
         </div>
         <h2 className="text-4xl tracking-tight text-primary leading-tighter text-balance pr-10">
-          A workplace consultancy creating inspiring environments
+          {title}
         </h2>
       </div>
     </div>
